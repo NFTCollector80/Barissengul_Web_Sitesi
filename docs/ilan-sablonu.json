@@ -1,0 +1,17 @@
+{
+  "title": "Örnek: Seferihisar Sultan Konakları",
+  "location": "Seferihisar",
+  "type": "Villa",
+  "price": "20000000",
+  "status": "Satılık",
+  "image": "https://res.cloudinary.com/bl0vsihz/image/upload/v1791894839/MOR07895_10.jpg",
+  "gallery": [
+    "https://res.cloudinary.com/bl0vsihz/image/upload/v1791894839/MOR07895_10.jpg"
+  ],
+  "bedrooms": "3+2",
+  "bathrooms": 2,
+  "size": 150,
+  "landSize": 300,
+  "description": "Birinci paragraf.\n\nİkinci paragraf.\n\nÜçüncü paragraf.",
+  "featured": true
+}

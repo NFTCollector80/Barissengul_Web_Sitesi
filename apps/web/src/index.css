@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Luxury Palette */
+    --background: 40 33% 98%; /* #FDFBF7 */
+    --foreground: 0 0% 10%; /* #1A1A1A */
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    
+    --primary: 33 38% 63%; /* #C4A47C */
+    --primary-foreground: 0 0% 10%; /* Dark text for gold background */
+    
+    --secondary: 0 0% 10%; /* #1A1A1A */
+    --secondary-foreground: 40 33% 98%;
+    
+    --muted: 40 20% 90%;
+    --muted-foreground: 0 0% 40%;
+    
+    --accent: 33 38% 63%; /* #C4A47C */
+    --accent-foreground: 0 0% 10%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 40 20% 90%;
+    --input: 40 20% 90%;
+    --ring: 33 38% 63%;
+    
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%; /* #1A1A1A */
+    --foreground: 40 33% 98%; /* #FDFBF7 */
+    
+    --card: 0 0% 15%;
+    --card-foreground: 40 33% 98%;
+    
+    --popover: 0 0% 15%;
+    --popover-foreground: 40 33% 98%;
+    
+    --primary: 33 38% 63%; /* #C4A47C */
+    --primary-foreground: 0 0% 10%;
+    
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 40 33% 98%;
+    
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    
+    --accent: 33 38% 63%; /* #C4A47C */
+    --accent-foreground: 0 0% 10%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 33 38% 63%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: clip;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  text-wrap: balance;
+}
+
+* {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+@layer utilities {
+  .luxury-spacing-sm {
+    @apply py-12 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .luxury-spacing {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .luxury-spacing-lg {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .luxury-spacing-xl {
+    @apply py-24 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .luxury-card {
+    @apply bg-card rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 border border-border/50;
+  }
+  
+  .luxury-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+  
+  .luxury-grid-4 {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
+  }
+
+  .hover-gold {
+    @apply hover:text-[#C4A47C] transition-colors duration-300;
+  }
+
+  .bg-gold-hover {
+    @apply hover:bg-[#C4A47C] hover:text-[#1A1A1A] transition-all duration-300;
+  }
+}
